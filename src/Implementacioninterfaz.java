@@ -30,16 +30,17 @@ public class Implementacioninterfaz extends UnicastRemoteObject implements inter
         return a/b;
     }
 
-    public  int Menu (int num) throws  RemoteException{
-        System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
-        System.out.println("| \t C A L C U L D O R A                        |");
-        System.out.println(" /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
-        System.out.println("1.- SUMA");
-        System.out.println("2.- RESTA");
-        System.out.println("3.- MULTIPLICACION");
-        System.out.println("4.- DIVISION");
-        System.out.print("Elija la Opcion: ");
-        return num;
+    public String obtenerMenu() throws RemoteException {
+        StringBuilder menu = new StringBuilder();
+        menu.append("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-\n");
+        menu.append("| \t C A L C U L A D O R A                        |\n");
+        menu.append(" /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-\n");
+        menu.append("1.- SUMA\n");
+        menu.append("2.- RESTA\n");
+        menu.append("3.- MULTIPLICACION\n");
+        menu.append("4.- DIVISION\n");
+        menu.append("Elija la Opcion: ");
+        return menu.toString();
     }
 
 
