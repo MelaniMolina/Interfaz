@@ -14,6 +14,8 @@ public interface interfaz extends Remote {
 
     String msjBienvenido() throws RemoteException;
 
+    int Menu (int num) throws  RemoteException;
+
 
 
 }
