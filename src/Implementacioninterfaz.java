@@ -33,7 +33,7 @@ public class Implementacioninterfaz extends UnicastRemoteObject implements inter
     public  int Menu (int num) throws  RemoteException{
         System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
         System.out.println("| \t C A L C U L D O R A                        |");
-        System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
+        System.out.println(" /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-");
         System.out.println("1.- SUMA");
         System.out.println("2.- RESTA");
         System.out.println("3.- MULTIPLICACION");
